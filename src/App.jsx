@@ -1,31 +1,53 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import Search from './components/Search.jsx'
 
-const Card = ({ title }) => {
-  const [count, setcount] = useState(0);
-  const [hasLiked, setHasLiked] = useState(false);
+const API_BASE_URL = 'https://api.themoviedb.org/3';
 
-  useEffect( () => {
-    console.log(`${title} has been liked : ${hasLiked}`);
-  }, [hasLiked]);
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
-  return (
-    <div className="card" onClick={() =>setcount(count + 1)}>
-      <h2>{title} <br/> {count ? count : null}</h2>
-      <button onClick={() => setHasLiked(!hasLiked)}>
-        {hasLiked ? 'Liked' : 'Like'}
-      </button>
-    </div>
-  )
+const API_OPTIONS = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: `Bearer ${API_KEY}`
+  }
 }
 
 const App = () => {
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const [errorMessage, seterrorMessage] = useState('');
+
+  const fetchMovies = async () => {
+    try {
+
+    } catch (error) {
+      console.error(`Error fetching movies: ${error}`);
+      seterrorMessage('Error fetching movies. Please try again later.');
+    }
+  }
+
+  useEffect( () => {
+
+  },[]);
+   
   return (
-    <div className="card-container">
-      <Card title="Star Wars" rating={5} isCool={true} />
-      <Card title="Avatar" />
-      <Card title="The Lion King" />
-    </div>
+    <main>
+
+      <div className='pattern'    />
+      <div className='wrapper'>
+        <header>
+          <img src="/hero.png" alt="Hero Banner" />
+          <h1>Find <span className='text-gradient'>Movies</span> You'll Enjoy without the Hassle</h1>
+
+          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+        </header>
+        
+
+        
+      </div>
+    </main>
   )
 }
 
