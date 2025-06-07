@@ -1,12 +1,60 @@
-# React + Vite
+<h1 align="center">🌌 Cineverse 🎬</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <strong>Discover the universe of movies — one search at a time.</strong><br/>
+  <em>Your personalized gateway to trending, timeless, and top-rated cinema.</em>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  🔍 Dynamic Search • 📈 Community-Driven Trends • 💻 Built with Modern Stack • ☁️ Appwrite-Integrated
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Cineverse Screenshot](./screenshots/hero.png)
+
+---
+
+## 🚀 Features
+
+✨ **Real-Time Movie Search**  
+Type as you think — get intelligent search results instantly from TMDB.
+
+🔥 **Trending Section Powered by Community**  
+See what others are searching and keep up with popular buzz in real-time.
+
+🧠 **Debounced Search for Performance**  
+No spamming the API — optimized and efficient.
+
+🎨 **Tailwind CSS for Beautiful, Responsive Design**  
+Looks stunning on mobile, tablet, and desktop.
+
+☁️ **Appwrite-Backed Search Analytics**  
+Track and update search history to power trending logic.
+
+🛠️ **Blazing Fast Vite + React**  
+Lightning-fast development and deployment.
+
+---
+
+## 🧰 Tech Stack
+
+| 🧱 Technology   | 💡 Usage                                |
+|----------------|------------------------------------------|
+| **React**      | Frontend UI rendering                    |
+| **Vite**       | Dev server & build tool                  |
+| **Tailwind CSS**| Responsive & modern styling             |
+| **Appwrite**   | Backend as a Service (DB + API)          |
+| **TMDB API**   | Source for movie data and search results |
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the Repo
+
+```bash
+git clone https://github.com/your-username/cineverse.git
+cd cineverse
