@@ -160,3 +160,28 @@
     display: none;
   }
 }
+@keyframes zoomOutFromCenter {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
+@utility animate-hero-zoom {
+  animation: zoomOutFromCenter 1s ease-out forwards;
+  transform-origin: center;
+  display: block; /* helps with margin and centering */
+}
+.hero-image-container {
+  /* fixed size to prevent collapsing */
+  width: 320px;
+  height: 480px;
+  /* center the container */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem; /* for spacing from text */
+}
